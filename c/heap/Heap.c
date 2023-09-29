@@ -4,7 +4,7 @@
 #include "Heap.h"
 
 
-int INITIAL_CAPACITY = 10;
+int INITIAL_CAPACITY = 5;
 
 Heap* heap_init() {
     Heap *heap = (Heap*) malloc(sizeof(Heap));
