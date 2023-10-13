@@ -4,6 +4,7 @@
 #include "Trie/TestTrie.c"
 #include "stack/TestStack.c"
 #include "queue/TestQueue.c"
+#include "double_linked_list/TestDoubleLinkedList.c"
 
 int test_everything() {
     int result = 0;
@@ -12,6 +13,7 @@ int test_everything() {
     result += test_trie();
     result += test_stack();
     result += test_queue();
+    result += test_double_linked_list();
     return result;
 }
 

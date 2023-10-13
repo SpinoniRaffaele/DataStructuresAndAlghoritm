@@ -15,7 +15,7 @@ all:  main.o
 	$(CC) $(CFLAGS) -o main *.o
 
 # add to the main.o the dependencies of any other module is added
-main.o: clean Heap.o LinkedList.o Trie.o Stack.o Queue.o
+main.o: clean Heap.o LinkedList.o Trie.o Stack.o Queue.o DoubleLinkedList.o
 	$(CC) $(CFLAGS) -c main.c
 
 
@@ -33,6 +33,9 @@ Stack.o:
 
 Queue.o:
 	$(CC) $(CFLAGS) -c queue/Queue.c
+
+DoubleLinkedList.o:
+	$(CC) $(CFLAGS) -c double_linked_list/DoubleLinkedList.c
 
 #cleanup script
 clean:
