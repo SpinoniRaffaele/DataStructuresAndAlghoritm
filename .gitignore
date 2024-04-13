@@ -2,3 +2,4 @@ venv
 .idea
 /c/.vscode/
 /java/out/
+typescript/node_modules
