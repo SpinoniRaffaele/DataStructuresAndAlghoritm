@@ -16,6 +16,7 @@ export class Queue<T> {
   }
 
   dequeue(): T {
+    if (this.isEmpty()) throw new Error();
     const result = this.first;
     if (this.first !== this.last) {
       this.first = this.first.next;
